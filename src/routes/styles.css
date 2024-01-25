@@ -11,8 +11,6 @@
 	--color-text: var(--font-body);
 	--color-primary: #2e7d32;
 	--color-bg-body: #c8e6c9;
-	--color-bg-card: #f5f5f5;
-	--shadow-card: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
 	font-family: var(--font-body);
 	font-size: var(--font-size-base);
 	color: var(--color-text);
