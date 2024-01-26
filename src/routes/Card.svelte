@@ -4,6 +4,7 @@
     import github from '$lib/icons/github-icon.svg';
     import linkedin from '$lib/icons/linkedin-icon.svg';
     import twitter from '$lib/icons/twitter-icon.svg';
+    import photo from '$lib/images/user-photo.jpg?enhanced';
 </script>
 
 <section class="card">
@@ -33,7 +34,7 @@
         </div>
     </div>
     <div class="bio">
-        Test
+        <enhanced:img src={photo} class="photo" alt="Zac Patrick" />
     </div>
 </section>
 
@@ -106,6 +107,19 @@
     }
 
     .bio {
+        position: relative;
         padding: var(--padding-card);
+    }
+
+    .photo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -65px;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 550px;
+        width: auto;
     }
 </style>
