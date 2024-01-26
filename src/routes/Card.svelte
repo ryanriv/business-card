@@ -33,8 +33,33 @@
             <a href="https://www.twitter.com" target="_blank" class="social-link"><img src={twitter} alt="Twitter" /></a>
         </div>
     </div>
-    <div class="bio">
-        <enhanced:img src={photo} class="photo" alt="Zac Patrick" />
+    <div class="profile">
+        <div class="photo">
+            <enhanced:img src={photo} class="photo" alt="Zac Patrick" />
+        </div>
+
+        <div class="bio">
+            <h1 class="heading-large name">
+                <span class="text-primary">Zac</span>
+                <br />
+                Patrick
+            </h1>
+            <span class="text-semibold">Front-end Developer</span>
+            <span class="bullet">&bull;</span>
+            <span class="text-semibold">San Francisco</span>
+
+            <p>High accomplishment and user-focused Front-end Developer adept in collaborating with UX and design teams 
+                to plan the technical writing and execution of functional specifications for websites and applications.</p>
+            
+            <span class="text-semibold">Working with technologies:</span>
+
+            <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>GraphQL</li>
+            </ul>
+        </div>
     </div>
 </section>
 
@@ -46,7 +71,7 @@
         --padding-card: 25px;
 
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 781px;
 	    margin: auto;
         width: 100%;
         max-width: 1122px;
@@ -106,20 +131,35 @@
         width: 20px;
     }
 
-    .bio {
-        position: relative;
+    .profile {
         padding: var(--padding-card);
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        height: 100%;
+        position: relative;
+        left: -65px;
     }
 
     .photo {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: -65px;
         margin-top: auto;
         margin-bottom: auto;
         height: 550px;
-        width: auto;
+        width: 335px;
+        object-fit: cover;
+    }
+
+    .bio {
+        padding: var(--padding-card);
+    }
+
+    .name {
+        text-transform: uppercase;
+        font-weight: var(--font-weight-semibold);
+        margin-bottom: 15px;
+    }
+
+    .bullet {
+        display: inline-block;
+        padding: 0 5px;
     }
 </style>

@@ -16,8 +16,34 @@
 	color: var(--color-text);
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
 	height: 100%;
 	display: grid;
 	background-color: var(--color-bg-body);
+}
+
+.heading-large {
+	font-size: 46px;
+	font-weight: var(--font-weight-semibold);
+	line-height: 55.2px;
+}
+
+.heading-small {
+	font-size: 19px;
+	font-weight: var(--font-weight-semibold);
+	line-height: 30.4px;
+}
+
+.text-primary {
+	color: var(--color-primary);
+}
+
+.text-semibold {
+	font-weight: var(--font-weight-semibold);
 }
