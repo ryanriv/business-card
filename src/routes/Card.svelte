@@ -7,7 +7,7 @@
     import photo from '$lib/images/user-photo.jpg?enhanced';
 </script>
 
-<section class="card">
+<div class="card">
     <div class="contact">
         <div class="contact-info">
             <address>
@@ -61,7 +61,7 @@
             </ul>
         </div>
     </div>
-</section>
+</div>
 
 <style>
 	.card {
@@ -134,10 +134,8 @@
     .profile {
         padding: var(--padding-card);
         display: grid;
-        grid-template-columns: min-content 1fr;
+        grid-template-columns: 245px 1fr;
         height: 100%;
-        position: relative;
-        left: -65px;
     }
 
     .photo {
@@ -146,6 +144,7 @@
         height: 550px;
         width: 335px;
         object-fit: cover;
+        transform: translateX(-45px);
     }
 
     .bio {
