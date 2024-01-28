@@ -10,7 +10,7 @@
 	--color-white: rgba(255, 255, 255, 0.87);
 	--color-text: var(--font-body);
 	--color-primary: #4622a5;
-	--color-accent: #e0e0e0;
+	--color-accent: #cdb4ff;
 	--color-bg-body: #ece6ff;
 	font-family: var(--font-body);
 	font-size: var(--font-size-base);
@@ -47,4 +47,55 @@ body {
 
 .text-semibold {
 	font-weight: var(--font-weight-semibold);
+}
+
+.animate-slide-in {
+	animation: slide-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.animate-pulsate {
+	animation: pulsate 3s ease-in-out infinite both;
+}
+
+.animate-wiggle {
+	animation: wiggle 3s ease-in-out infinite both;
+}
+
+@keyframes slide-in {
+	0% {
+		transform: translateY(-1000px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes pulsate {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+	
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes wiggle {
+	0% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(-15px);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
 }

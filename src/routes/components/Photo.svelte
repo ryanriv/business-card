@@ -4,9 +4,9 @@
 
 <div class="photo">
     <div class="square square-top"></div>
-    <div class="square square-bottom"></div>
+    <div class="rectangle animate-wiggle"></div>
     <enhanced:img src={photo} class="photo" alt="Zac Patrick" />
-    <div class="rectangle"></div>
+    <div class="square square-bottom animate-pulsate"></div>
     <div class="circle"></div>
 </div>
 
@@ -42,7 +42,7 @@
     }
 
     .square-bottom {
-        left: -5px;
+        left: -10px;
         bottom: -25px;
     }
 

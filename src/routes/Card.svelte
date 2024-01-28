@@ -3,7 +3,7 @@
 	import Profile from './components/Profile.svelte';
 </script>
 
-<div class="card">
+<div class="card animate-slide-in">
     <Contact />
     <Profile />
 </div>
