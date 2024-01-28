@@ -9,8 +9,9 @@
 	--color-black: rgba(0, 0, 0, 0.87);
 	--color-white: rgba(255, 255, 255, 0.87);
 	--color-text: var(--font-body);
-	--color-primary: #2e7d32;
-	--color-bg-body: #c8e6c9;
+	--color-primary: #4622a5;
+	--color-accent: #e0e0e0;
+	--color-bg-body: #ece6ff;
 	font-family: var(--font-body);
 	font-size: var(--font-size-base);
 	color: var(--color-text);
@@ -28,13 +29,13 @@ body {
 	background-color: var(--color-bg-body);
 }
 
-.heading-large {
+.text-large {
 	font-size: 46px;
 	font-weight: var(--font-weight-semibold);
 	line-height: 55.2px;
 }
 
-.heading-small {
+.text-small {
 	font-size: 19px;
 	font-weight: var(--font-weight-semibold);
 	line-height: 30.4px;
