@@ -20,7 +20,7 @@
 
         display: grid;
         grid-template-columns: minmax(min-content, 340px) 1fr;
-	    margin: auto;
+        margin: var(--padding-card);
         max-width: 1122px;
         height: 667px;
         background-color: var(--color-bg-card);
@@ -32,7 +32,11 @@
     @media (max-width: $extra-large-breakpoint) {
         .card {
             --padding-card: 15px;
+        }
+    }
 
+    @media (max-width: $large-breakpoint) {
+        .card {
             margin: 0;
             grid-template-columns: 1fr;
             width: 100%;

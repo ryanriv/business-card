@@ -32,9 +32,10 @@
 
 body {
 	height: 100%;
-	display: flex;
+	display: grid;
 	background-color: var(--color-bg-body);
 	margin: 0;
+	align-items: center;
 }
 
 .text-large {
@@ -108,13 +109,14 @@ body {
 	}
 }
 
-@media (max-width: $medium-breakpoint) {
+@media (max-width: $large-breakpoint) {
 	:root {
 		--font-size-base: 14px;
 	}
 
 	body {
 		background-color: var(--color-bg-card);
+		display: block;
 	}
 
 	.text-large {

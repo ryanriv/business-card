@@ -84,8 +84,13 @@
         padding-top: 0;
     }
 
+    @media (max-width: $extra-large-breakpoint) {
+        .profile {
+            margin-left: 0;
+        }
+    }
 
-    @media (max-width: $medium-breakpoint) {
+    @media (max-width: $large-breakpoint) {
         .profile-container {
             padding: var(--padding-card);
             display: block;

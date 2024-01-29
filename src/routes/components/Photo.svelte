@@ -70,7 +70,26 @@
         background-color: var(--color-primary);
     }
 
-    @media (max-width: $medium-breakpoint) {
+    @media (max-width: $extra-large-breakpoint) {
+        .photo-container {
+            width: 340px;
+            left: 70px;
+        }
+
+        .photo-container .photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+        }
+
+        .square,
+        .rectangle,
+        .circle {
+            display: none;
+        }
+    }
+
+    @media (max-width: $large-breakpoint) {
         .photo-container {
             left: 0;
             margin: 0;
@@ -81,15 +100,9 @@
         }
 
         .photo-container .photo {
-            height: 125px;
             width: 125px;
+            height: 125px;
             border-radius: 100%;
-        }
-
-        .square,
-        .rectangle,
-        .circle {
-            display: none;
         }
     }
 

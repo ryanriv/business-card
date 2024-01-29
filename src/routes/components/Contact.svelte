@@ -81,7 +81,7 @@
         width: 20px;
     }
 
-    @media (max-width: $medium-breakpoint) {
+    @media (max-width: $large-breakpoint) {
         .contact {
             row-gap: 0;
             grid-template-areas:
