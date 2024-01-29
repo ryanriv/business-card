@@ -2,24 +2,30 @@
     import photo from '$lib/images/photo.avif?enhanced';
 </script>
 
-<div class="photo">
+<div class="photo-container">
     <div class="square square-top"></div>
     <div class="rectangle animate-wiggle"></div>
-    <enhanced:img src={photo} class="photo" alt="Zac Patrick" />
+    <enhanced:img src={photo} class="photo" alt="Silhouette of man pointing at sky." />
     <div class="square square-bottom animate-pulsate"></div>
     <div class="circle"></div>
 </div>
 
-<style>
-    .photo {
-        position: relative;
+<style lang="scss">
+    @import '../variables.scss';
+
+    .photo-container {
+        position: absolute;
         margin-top: auto;
         margin-bottom: auto;
+        z-index: 1;
+        top: 40px;
+        left: 280px;
+    }
+
+    .photo-container .photo {
         height: 550px;
         width: 335px;
         object-fit: cover;
-        transform: translateX(-45px);
-        z-index: 1;
     }
 
     .square,
@@ -37,30 +43,59 @@
     }
 
     .square-top {
-        top: 50px;
-        left: -68px;
+        top: 70px;
+        left: -25px;
     }
 
     .square-bottom {
-        left: -10px;
-        bottom: -25px;
+        left: 30px;
+        bottom: -20px;
     }
 
     .rectangle {
         width: 50px;
         height: 20px;
-        top: 20px;
-        right: 10px;
+        top: 15px;
+        right: -35px;
         background-color: var(--color-accent);
     }
 
     .circle {
         width: 50px;
         aspect-ratio: 1;
-        bottom: -25px;
-        right: 20px;
-        z-index: 0;
+        bottom: -15px;
+        right: -20px;
+        z-index: -1;
         border-radius: 100%;
         background-color: var(--color-primary);
+    }
+
+    @media (max-width: $medium-breakpoint) {
+        .photo-container {
+            left: 0;
+            margin: 0;
+            z-index: 1;
+            width: 50%;
+            top: var(--padding-card);
+            text-align: center;
+        }
+
+        .photo-container .photo {
+            height: 125px;
+            width: 125px;
+            border-radius: 100%;
+        }
+
+        .square,
+        .rectangle,
+        .circle {
+            display: none;
+        }
+    }
+
+    @media (max-width: $small-breakpoint) {
+        .photo-container {
+            width: 100%;
+        }
     }
 </style>

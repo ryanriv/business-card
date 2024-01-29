@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 @import '@fontsource/poppins/400.css';
 @import '@fontsource/poppins/600.css';
 
@@ -12,6 +14,11 @@
 	--color-primary: #dd5f01;
 	--color-accent: #6c517d;
 	--color-bg-body: #ece6ff;
+	--color-bg-card: #f5f5f5;
+	--min-width-small: 576px;
+	--min-width-medium: 768px;
+	--min-width-large: 992px;
+	--min-width-extra-large: 1200px;
 	font-family: var(--font-body);
 	font-size: var(--font-size-base);
 	color: var(--color-text);
@@ -25,8 +32,9 @@
 
 body {
 	height: 100%;
-	display: grid;
+	display: flex;
 	background-color: var(--color-bg-body);
+	margin: 0;
 }
 
 .text-large {
@@ -50,7 +58,7 @@ body {
 }
 
 .animate-slide-in {
-	animation: slide-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .animate-pulsate {
@@ -97,5 +105,20 @@ body {
 	
 	100% {
 		transform: translateX(0);
+	}
+}
+
+@media (max-width: $medium-breakpoint) {
+	:root {
+		--font-size-base: 14px;
+	}
+
+	body {
+		background-color: var(--color-bg-card);
+	}
+
+	.text-large {
+		font-size: 26px;
+		line-height: 31.2px;
 	}
 }
