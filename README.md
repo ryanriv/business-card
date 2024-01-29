@@ -2,7 +2,7 @@
 
 This is a project from [BigDevSoon](https://app.bigdevsoon.me/projects/business-card).
 
-It was built with Svelte.js and I added some extra bits to make it responsive.
+It was built with Svelte and I added some extra bits to make it responsive.
 
 [Live Demo](https://business-card-mu-eight.vercel.app/)
 
